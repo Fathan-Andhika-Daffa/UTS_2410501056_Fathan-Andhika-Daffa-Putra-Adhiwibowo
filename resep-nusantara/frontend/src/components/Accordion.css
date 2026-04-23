@@ -1,0 +1,50 @@
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+}
+
+.accordion-body.open { 
+    opacity: 1; 
+}
+
+.arrow { 
+    transition: transform 0.35s ease; display:inline-block; 
+}
+
+.arrow.open { 
+    transform: rotate(180deg); 
+}
+
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.open { 
+    opacity: 1; pointer-events: all; 
+}
+
+.modal {
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.modal-overlay.open .modal { 
+    transform: translateY(0) scale(1); 
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .recipe-grid { grid-template-columns: 1fr; padding: 1rem; }
+}

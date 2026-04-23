@@ -1,0 +1,157 @@
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #f7efe4;
+  padding: 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-section { margin-bottom: 1.5rem; }
+
+.form-section-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #5C3D2E;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.75rem;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(200, 151, 58, 0.25);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.form-group { margin-bottom: 10px; }
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5C3D2E;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  border: 1.5px solid rgba(200, 151, 58, 0.3);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  background: #fff;
+  color: #1A0E0A;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #C8973A;
+  box-shadow: 0 0 0 3px rgba(200, 151, 58, 0.12);
+}
+
+.form-input.error,
+.form-select.error { border-color: #C62828; background: #FFF5F5; }
+
+.form-textarea { resize: vertical; min-height: 70px; }
+
+.form-error {
+  font-size: 0.75rem;
+  color: #C62828;
+  margin-top: 3px;
+}
+
+.dynamic-list { display: flex; flex-direction: column; gap: 8px; }
+
+.dynamic-row { display: flex; gap: 8px; align-items: center; }
+.dynamic-row .form-input { flex: 1; }
+
+.btn-remove {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #FFCDD2;
+  background: #FFEBEE;
+  color: #C62828;
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+.btn-remove:hover { background: #C62828; color: #fff; }
+
+.btn-add-field {
+  width: 100%;
+  border: 1.5px dashed rgba(200, 151, 58, 0.5);
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(200, 151, 58, 0.06);
+  color: #5C3D2E;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: all 0.2s;
+}
+.btn-add-field:hover { background: rgba(200, 151, 58, 0.14); border-color: #C8973A; }
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(200, 151, 58, 0.2);
+  margin-top: 0.5rem;
+}
+
+.btn-primary {
+  background: #C8973A;
+  color: #1A0E0A;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary:hover { background: #E0A83F; transform: translateY(-1px); }
+
+.btn-secondary {
+  background: #fff;
+  color: #5C3D2E;
+  border: 1.5px solid rgba(200, 151, 58, 0.35);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-secondary:hover { background: rgba(200, 151, 58, 0.06); }
+
+.confirm-wrap {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f7efe4;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+.confirm-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.confirm-title { font-size: 1.1rem; font-weight: 700; color: #1A0E0A; margin-bottom: 0.5rem; }
+.confirm-text { font-size: 0.85rem; color: #6B5B4E; margin-bottom: 1.5rem; line-height: 1.6; }
+.confirm-actions { display: flex; gap: 10px; justify-content: center; }
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+}
