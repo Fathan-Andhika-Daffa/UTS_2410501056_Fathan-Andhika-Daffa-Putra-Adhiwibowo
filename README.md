@@ -52,21 +52,21 @@ Tampilan filter tingkat
 
 ### Langkah 3 - Jalankan Backend (jika ada node_modules)
 8.	Buka Command Prompt atau Terminal
-9.	Masuk ke folder backend: cd C:\path\ke\resep-nusantara\backend
-10.	Jalankan server: npm run dev
+9.	Masuk ke folder backend: `cd backend`
+10.	Jalankan server: `npm run dev`
 11.	Tunggu hingga muncul tulisan: Database terhubung!
 
 ### Langkah 3 - Setup & Jalankan Backend (Jika tidak ada node_modules)
 8.  Buka Command Prompt atau Terminal
 9.  Masuk ke folder backend: `cd backend`
 10. Install dependensi: `npm install`
-11. Pastikan file `.env` sudah ada dan sesuai dengan database XAMPP kamu.
+11. Pastikan file `.env` sudah ada dan sesuai dengan database XAMPP.
 12. Jalankan server: `npm run dev`
 
 ### Langkah 4 - Jalankan Frontend (jika ada node_modules)
 12.	Buka Terminal baru (jangan tutup terminal backend)
-13.	Masuk ke folder frontend: cd C:\path\ke\resep-nusantara\frontend
-14.	Jalankan React app: npm start
+13.	Masuk ke folder frontend: `cd frontend`
+14.	Jalankan React app: `npm start`
 15.	Browser akan terbuka otomatis di http://localhost:3000
 
 ### Langkah 4 - Setup & Jalankan Frontend (Jika tidak ada node_modules)
